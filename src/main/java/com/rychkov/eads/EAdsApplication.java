@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @EnableRabbit
 public class EAdsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(EAdsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(EAdsApplication.class, args);
+    }
 
 }
