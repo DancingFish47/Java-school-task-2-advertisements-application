@@ -25,19 +25,22 @@ public class TopSellersProducer {
     private int delay;
 
     public Flux<Integer> topSellersFlux() {
-        log.info(String.valueOf(hashMap.hashCode()));
+        log.info("Top sellers list hash = " + hashMap.hashCode());
+
         return Flux.just(hashMap.hashCode()).delaySubscription(Duration.ofSeconds(delay));
     }
 
     @RabbitListener(queues = "${jsa.rabbitmq.queue1}")
     @SneakyThrows
     public void listenTopSellers(String msg) {
+        log.info("New 'Top sellers' message received");
+
         CollectionType typeReference = TypeFactory.defaultInstance().constructCollectionType(List.class, BookDto.class);
         List<BookDto> bookDtos = objectMapper.readValue(msg, typeReference);
-        hashMap.put(1, bookDtos);
+        hashMap.put(0, bookDtos);
     }
 
     public List<BookDto> getTopSellersList() {
-        return hashMap.get(1);
+        return hashMap.get(0);
     }
 }

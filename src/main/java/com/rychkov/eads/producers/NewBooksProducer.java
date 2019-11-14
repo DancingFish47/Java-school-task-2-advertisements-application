@@ -25,19 +25,22 @@ public class NewBooksProducer {
     private int delay;
 
     public Flux<Integer> newBooksFlux() {
-        log.info(String.valueOf(hashMap.hashCode()));
+        log.info("New books list hash = " + hashMap.hashCode());
+
         return Flux.just(hashMap.hashCode()).delaySubscription(Duration.ofSeconds(delay));
     }
 
     @RabbitListener(queues = "${jsa.rabbitmq.queue2}")
     @SneakyThrows
     public void listenNewBooks(String msg) {
+        log.info("New 'New books' message received");
+
         CollectionType typeReference = TypeFactory.defaultInstance().constructCollectionType(List.class, BookDto.class);
         List<BookDto> bookDtos = objectMapper.readValue(msg, typeReference);
-        hashMap.put(1, bookDtos);
+        hashMap.put(0, bookDtos);
     }
 
     public List<BookDto> getNewBooksList() {
-        return hashMap.get(1);
+        return hashMap.get(0);
     }
 }
