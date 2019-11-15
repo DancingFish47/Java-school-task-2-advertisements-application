@@ -84,6 +84,7 @@ window.onload = function () {
         else showServiceSwitch('none', 'block');
 
         if (event.data !== newBooksHash) {
+            toastr.success("Loading new book message");
             let call = await fetch("/getNewBooks", {
                 method: 'POST',
                 headers: {
@@ -133,6 +134,7 @@ window.onload = function () {
     };
     editBookStream.onmessage = async function (event) {
         if (event.data !== editBookHash) {
+            toastr.success("Loading new edit message");
             let call = await fetch("/getEditBook", {
                 method: 'POST',
                 headers: {
@@ -141,9 +143,6 @@ window.onload = function () {
                 },
             });
             let result = await call.json();
-
-
-
 
             for (let book of result) {
                 let bookCategory;
@@ -175,6 +174,7 @@ window.onload = function () {
     };
     deleteBookStream.onmessage = async function (event) {
         if (event.data !== deleteBookHash) {
+            toastr.success("Loading new delete message");
             let call = await fetch("/getDeleteBook", {
                 method: 'POST',
                 headers: {
