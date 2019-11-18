@@ -18,11 +18,11 @@ toastr.options = {
 
 window.onload = function () {
 
-    let topSellersHash = 0;
-    let newBooksHash = 0;
-    let editBookHash = 0;
-    let addBookHash = 0;
-    let deleteBookHash = 0;
+    let topSellersHash = "0";
+    let newBooksHash = "0";
+    let editBookHash = "0";
+    let addBookHash = "0";
+    let deleteBookHash = "0";
 
     let topSellersStream = new EventSource("/topSellers");
     topSellersStream.onerror = function (event) {
@@ -35,7 +35,7 @@ window.onload = function () {
         if(event.data !== '0') showServiceSwitch('block', 'none');
         else showServiceSwitch('none', 'block');
 
-        if (event.data !== topSellersHash) {
+        if (event.data != null && event.data !== topSellersHash) {
             let call = await fetch("/getTopSellers", {
                 method: 'POST',
                 headers: {
@@ -83,8 +83,7 @@ window.onload = function () {
         if(event.data !== '0') showServiceSwitch('block', 'none');
         else showServiceSwitch('none', 'block');
 
-        if (event.data !== newBooksHash) {
-            toastr.success("Loading new book message");
+        if (event.data != null && event.data !== newBooksHash) {
             let call = await fetch("/getNewBooks", {
                 method: 'POST',
                 headers: {
@@ -95,10 +94,6 @@ window.onload = function () {
             let result = await call.json();
 
             document.getElementById('newBooksDeck').innerHTML = null;
-
-
-
-            let counter = 0;
 
             for (let book of result) {
                 let bookCategory;
@@ -121,8 +116,8 @@ window.onload = function () {
             }
             }
             newBooksHash = event.data;
-        }
-    };
+        };
+
 
 
     let editBookStream = new EventSource("/editBook");
@@ -134,6 +129,7 @@ window.onload = function () {
     };
     editBookStream.onmessage = async function (event) {
         if (event.data !== editBookHash) {
+            editBookHash = event.data;
             toastr.success("Loading new edit message");
             let call = await fetch("/getEditBook", {
                 method: 'POST',
@@ -160,7 +156,7 @@ window.onload = function () {
                 document.getElementById('newBookAmountLeft' + book.id).innerText = 'Amount left: ' +book.amount;
 
             }
-            editBookHash = event.data;
+
         }
     };
 
@@ -174,6 +170,7 @@ window.onload = function () {
     };
     deleteBookStream.onmessage = async function (event) {
         if (event.data !== deleteBookHash) {
+            deleteBookHash = event.data;
             toastr.success("Loading new delete message");
             let call = await fetch("/getDeleteBook", {
                 method: 'POST',
@@ -185,9 +182,9 @@ window.onload = function () {
             let result = await call.json();
             for (let bookId of result) {
                 document.getElementById('topSeller' + bookId).remove();
-                document.getElementById('newBook' + bookId).remove();
+                document.getElementById('newBookId' + bookId).remove();
             }
-            deleteBookHash = event.data;
+
         }
     };
 
@@ -200,6 +197,8 @@ window.onload = function () {
     };
     addBookStream.onmessage = async function (event) {
         if (event.data !== addBookHash) {
+            addBookHash = event.data;
+            toastr.success("Loading new book message");
             let call = await fetch("/getAddBook", {
                 method: 'POST',
                 headers: {
@@ -214,23 +213,24 @@ window.onload = function () {
                 if(book.bookCategory == null) bookCategory = 'No genre';
                 else bookCategory = book.bookCategory.name;
 
-                let template = '<div class="card border-primary" id="topSeller' + book.id + '" style="min-width: 225px; min-height: 400px; max-width: 225px; margin:5px">\
+                let template = '<div class="card border-primary" id="newBookId' + book.id + '" style="min-width: 225px; min-height: 400px; max-width: 225px; margin:5px">\
                     <img onerror="this.src=\'/images/placeholder.png\'" class="card-img-top" style="padding-left: auto; \
                     padding-right: auto;" src="http://localhost:8081/images/book' + book.id + '.png">\
                     <div class="card-body">\
-                    <h5 class="card-title">' + book.author + '. ' + book.name + '</h5>\
-                    <p class="card-text">Genre: '+ bookCategory + '</p>\
-                    <p class="card-text">Price: '+ book.price + '$</p>\
-                    <p class="card-text">Amount left: '+ book.amount + '</p>\
+                    <h5 id="newBookName' + book.id + '" class="card-title">' + book.author + '. ' + book.name + '</h5>\
+                    <p id="newBookCategory' + book.id + '"class="card-text">Genre: '+ bookCategory + '</p>\
+                    <p id="newBookPrice' + book.id + '" class="card-text">Price: '+ book.price + '$</p>\
+                    <p id="newBookAmountLeft' + book.id + '" class="card-text">Amount left: '+ book.amount + '</p>\
                     </div>\
                     </div>';
 
                 let previous = document.getElementById('newBooksDeck').innerHTML;
                 document.getElementById('newBooksDeck').innerHTML = template + previous;
             }
-            addBookHash = event.data;
+
         }
     };
+};
 
 
 function showServiceSwitch(serviceOn, serviceOff) {
