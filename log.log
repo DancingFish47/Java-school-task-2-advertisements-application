@@ -1,22 +1,654 @@
-"2019-11-20 00:02:47[main]INFO  c.rychkov.eads.EAdsApplicationTests - Starting EAdsApplicationTests on DESKTOP-H3GQ1U3 with PID 12344 (started by Roman in C:\java-school-task-2-advertisements-application)
-""2019-11-20 00:02:47[main]INFO  c.rychkov.eads.EAdsApplicationTests - No active profile set, falling back to default profiles: default
-""2019-11-20 00:02:53[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
-""2019-11-20 00:02:53[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
-""2019-11-20 00:02:53[main]INFO  c.rychkov.eads.EAdsApplicationTests - Started EAdsApplicationTests in 6.33 seconds (JVM running for 7.537)
-""2019-11-20 00:02:53[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
-""2019-11-20 00:02:53[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
-""2019-11-20 00:04:58[main]INFO  c.rychkov.eads.EAdsApplicationTests - Starting EAdsApplicationTests on DESKTOP-H3GQ1U3 with PID 7424 (started by Roman in C:\java-school-task-2-advertisements-application)
-""2019-11-20 00:04:58[main]INFO  c.rychkov.eads.EAdsApplicationTests - No active profile set, falling back to default profiles: default
-""2019-11-20 00:05:03[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
-""2019-11-20 00:05:03[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
-""2019-11-20 00:05:03[main]INFO  c.rychkov.eads.EAdsApplicationTests - Started EAdsApplicationTests in 5.863 seconds (JVM running for 7.202)
-""2019-11-20 00:05:03[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
-""2019-11-20 00:05:03[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
-""2019-11-20 00:05:03[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
-""2019-11-20 00:05:03[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
-""2019-11-20 00:24:26[main]INFO  c.rychkov.eads.EAdsApplicationTests - Starting EAdsApplicationTests on DESKTOP-H3GQ1U3 with PID 11848 (started by Roman in C:\java-school-task-2-advertisements-application)
-""2019-11-20 00:24:26[main]INFO  c.rychkov.eads.EAdsApplicationTests - No active profile set, falling back to default profiles: default
-""2019-11-20 00:24:36[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
-""2019-11-20 00:24:36[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
-""2019-11-20 00:24:36[main]INFO  c.rychkov.eads.EAdsApplicationTests - Started EAdsApplicationTests in 10.308 seconds (JVM running for 13.038)
+"2019-11-22 05:46:27[main]INFO  c.rychkov.eads.EAdsApplicationTests - Starting EAdsApplicationTests on DESKTOP-H3GQ1U3 with PID 8348 (started by Roman in C:\java-school-task-2-advertisements-application)
+""2019-11-22 05:46:27[main]INFO  c.rychkov.eads.EAdsApplicationTests - No active profile set, falling back to default profiles: default
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:43[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1]INFO  c.r.eads.producers.AddBookProducer - New 'Add book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1]INFO  c.r.e.producers.TopSellersProducer - New 'Top sellers' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1]INFO  c.r.eads.producers.NewBooksProducer - New 'New books' message received
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1]INFO  c.r.eads.producers.EditBookProducer - New 'Edit book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[main]INFO  c.rychkov.eads.EAdsApplicationTests - Started EAdsApplicationTests in 18.356 seconds (JVM running for 22.624)
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
+""2019-11-22 05:46:44[org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#4-1]INFO  c.r.e.producers.DeleteBookProducer - New 'Delete book' message received by listener
 "

@@ -7,8 +7,6 @@ import lombok.Setter;
 import java.sql.Date;
 
 @Data
-@Getter
-@Setter
 class BookCategory {
     private Integer id;
     private Integer version;
