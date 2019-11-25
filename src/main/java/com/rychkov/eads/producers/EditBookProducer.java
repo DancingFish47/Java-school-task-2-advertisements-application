@@ -31,7 +31,7 @@ public class EditBookProducer {
         return Flux.just(hashMap.hashCode()).delaySubscription(Duration.ofSeconds(delay));
     }
 
-    @RabbitListener(queues = "${jsa.rabbitmq.queue3}")
+    @RabbitListener(queues = "${jsa.rabbitmq.editBookQueue}")
     @SneakyThrows
     public void listenNewBooks(String msg) {
         log.info("New 'Edit book' message received by listener");

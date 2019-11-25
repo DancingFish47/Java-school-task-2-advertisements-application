@@ -30,7 +30,7 @@ public class DeleteBookProducer {
         return Flux.just(hashMap.hashCode()).delaySubscription(Duration.ofSeconds(delay));
     }
 
-    @RabbitListener(queues = "${jsa.rabbitmq.queue4}")
+    @RabbitListener(queues = "${jsa.rabbitmq.deleteBookQueue}")
     @SneakyThrows
     public void listenNewBooks(String msg) {
         log.info("New 'Delete book' message received by listener");

@@ -31,7 +31,7 @@ public class TopSellersProducer {
         return Flux.just(hashMap.hashCode()).delaySubscription(Duration.ofSeconds(delay));
     }
 
-    @RabbitListener(queues = "${jsa.rabbitmq.queue1}")
+    @RabbitListener(queues = "${jsa.rabbitmq.topSellersQueue}")
     @SneakyThrows
     public void listenTopSellers(String msg) {
         log.info("New 'Top sellers' message received");

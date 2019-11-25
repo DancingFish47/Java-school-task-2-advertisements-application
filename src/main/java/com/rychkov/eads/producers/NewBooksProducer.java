@@ -31,7 +31,7 @@ public class NewBooksProducer {
         return Flux.just(hashMap.hashCode()).delaySubscription(Duration.ofSeconds(delay));
     }
 
-    @RabbitListener(queues = "${jsa.rabbitmq.queue2}")
+    @RabbitListener(queues = "${jsa.rabbitmq.newBooksQueue}")
     @SneakyThrows
     public void listenNewBooks(String msg) {
         log.info("New 'New books' message received");
