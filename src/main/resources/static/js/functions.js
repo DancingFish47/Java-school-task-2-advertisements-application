@@ -129,7 +129,7 @@ window.onload = function () {
     };
     editBookStream.onmessage = async function (event) {
         if (event.data !== editBookHash) {
-            editBookHash = event.data;
+
             toastr.success("Loading new edit message");
             let call = await fetch("/getEditBook", {
                 method: 'POST',
@@ -143,20 +143,24 @@ window.onload = function () {
             for (let book of result) {
                 let bookCategory;
 
-                if(book.bookCategory == null) bookCategory = 'No genre';
+                if (book.bookCategory == null) bookCategory = 'No genre';
                 else bookCategory = book.bookCategory.name;
 
-                document.getElementById('topSellerName' + book.id).innerText = book.author + '. ' + book.name;
-                document.getElementById('topSellerPrice' + book.id).innerText = 'Price: ' + book.price + '$';
-                document.getElementById('topSellerCategory' + book.id).innerText = 'Genre: ' + bookCategory;
-                document.getElementById('topSellerAmountLeft' + book.id).innerText = 'Amount left: ' + book.amount;
-                document.getElementById('newBookName' + book.id).innerText = book.author + '. ' + book.name;
-                document.getElementById('newBookPrice' + book.id).innerText = 'Price: ' + book.price + '$';
-                document.getElementById('newBookCategory' + book.id).innerText = 'Genre: ' +bookCategory;
-                document.getElementById('newBookAmountLeft' + book.id).innerText = 'Amount left: ' +book.amount;
+                if (document.getElementById('topSeller' + book.id) != null) {
+                    document.getElementById('topSellerName' + book.id).innerText = book.author + '. ' + book.name;
+                    document.getElementById('topSellerPrice' + book.id).innerText = 'Price: ' + book.price + '$';
+                    document.getElementById('topSellerCategory' + book.id).innerText = 'Genre: ' + bookCategory;
+                    document.getElementById('topSellerAmountLeft' + book.id).innerText = 'Amount left: ' + book.amount;
+                }
+                if(document.getElementById('newBookId' + book.id) != null) {
+                    document.getElementById('newBookName' + book.id).innerText = book.author + '. ' + book.name;
+                    document.getElementById('newBookPrice' + book.id).innerText = 'Price: ' + book.price + '$';
+                    document.getElementById('newBookCategory' + book.id).innerText = 'Genre: ' + bookCategory;
+                    document.getElementById('newBookAmountLeft' + book.id).innerText = 'Amount left: ' + book.amount;
+                 }
 
             }
-
+            editBookHash = event.data;
         }
     };
 
@@ -170,7 +174,7 @@ window.onload = function () {
     };
     deleteBookStream.onmessage = async function (event) {
         if (event.data !== deleteBookHash) {
-            deleteBookHash = event.data;
+
             toastr.success("Loading new delete message");
             let call = await fetch("/getDeleteBook", {
                 method: 'POST',
@@ -181,10 +185,10 @@ window.onload = function () {
             });
             let result = await call.json();
             for (let bookId of result) {
-                document.getElementById('topSeller' + bookId).remove();
-                document.getElementById('newBookId' + bookId).remove();
+                if(document.getElementById('topSeller' + bookId) != null) document.getElementById('topSeller' + bookId).remove();
+                if(document.getElementById('newBookId' + bookId) != null) document.getElementById('newBookId' + bookId).remove();
             }
-
+            deleteBookHash = event.data;
         }
     };
 
@@ -197,7 +201,7 @@ window.onload = function () {
     };
     addBookStream.onmessage = async function (event) {
         if (event.data !== addBookHash) {
-            addBookHash = event.data;
+
             toastr.success("Loading new book message");
             let call = await fetch("/getAddBook", {
                 method: 'POST',
@@ -227,7 +231,7 @@ window.onload = function () {
                 let previous = document.getElementById('newBooksDeck').innerHTML;
                 document.getElementById('newBooksDeck').innerHTML = template + previous;
             }
-
+            addBookHash = event.data;
         }
     };
 };
